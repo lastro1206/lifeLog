@@ -1,0 +1,124 @@
+.react-calendar {
+  width: 70vw; /* 뷰포트 너비의 70% */
+  height: 70vh; /* 뷰포트 높이의 70% */
+  max-width: 800px; /* 최대 너비 제한 */
+  min-width: 300px; /* 최소 너비 제한 */
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 136, 255, 0.4);
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(8px);
+  color: #fff;
+}
+
+/* 📌 달력 내부 버튼 및 타일 크기 조정 */
+.react-calendar__tile {
+  padding: 2vw; /* 크기 조절 */
+  font-size: 1.5vw; /* 반응형 폰트 크기 */
+}
+
+/* 📌 네비게이션 바 크기 조정 */
+.react-calendar__navigation {
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.react-calendar__navigation button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+/* 📌 요일 스타일 */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  color: #00c3ff;
+  text-transform: uppercase;
+}
+
+/* 📌 날짜 타일 기본 스타일 */
+.react-calendar__tile {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.react-calendar__tile:hover {
+  background: rgba(0, 136, 255, 0.5);
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* 📌 오늘 날짜 하이라이트 */
+.highlight-today {
+  background: #ffeb3b !important;
+  color: black !important;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* 📌 선택된 날짜 스타일 */
+.react-calendar__tile--active {
+  background: linear-gradient(135deg, #00c3ff, #007bff) !important;
+  color: white !important;
+  border-radius: 12px;
+  font-weight: bold;
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(0, 136, 255, 0.5);
+}
+
+/* 📌 메모 입력창 스타일 - 유리 효과 */
+textarea {
+  width: 80%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(5px);
+  outline: none;
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 📌 저장 버튼 스타일 */
+button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #007bff, #00c3ff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 136, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00c3ff, #007bff);
+  transform: scale(1.05);
+}
