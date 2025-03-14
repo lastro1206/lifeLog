@@ -6,7 +6,7 @@ import Todo from "./pages/Todo";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route
@@ -22,7 +22,7 @@ function App() {
           element={<Todo />}
         />
       </Routes>
-    </Router>
+    </>
   );
 }
 

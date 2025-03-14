@@ -21,23 +21,29 @@
 
 /* 📌 네비게이션 바 크기 조정 */
 .react-calendar__navigation {
-  padding: 1vw;
+  padding: 8px;
   font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .react-calendar__navigation button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 19px;
-  cursor: pointer;
+  background: rgba(0, 136, 255, 0.8); /* 배경 색상 */
+  border-radius: 8px; /* 버튼 모서리 둥글게 */
+  padding: 10px 15px; /* 버튼 크기 조정 */
+  margin: 5px; /* 다른 요소와의 간격 */
+  font-size: 18px;
   font-weight: bold;
+  color: white;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .react-calendar__navigation button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
-  transition: 0.3s ease-in-out;
+  background: rgba(0, 136, 255, 1); /* 호버 시 더 진한 색 */
+  transform: scale(1.05); /* 약간 확대 */
 }
 
 /* 📌 요일 스타일 */
