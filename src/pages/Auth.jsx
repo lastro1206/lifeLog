@@ -4,7 +4,6 @@ import Register from "../components/Register.jsx";
 function Auth() {
   return (
     <>
-      <h1>Auth</h1>
       <Login />
       <Register />
     </>
